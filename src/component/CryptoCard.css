@@ -1,3 +1,9 @@
+.cryptoCard_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .cryptoCard_left {
   display: flex;
   align-items: center;
