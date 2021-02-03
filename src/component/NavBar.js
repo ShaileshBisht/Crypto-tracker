@@ -5,7 +5,10 @@ function NavBar() {
   return (
     <div className="navBar">
       <section>
-        <h1>i am nav bar component</h1>
+        <nav className="navBar_container">
+          <div className="navBar_container-left"></div>
+          <div className="navBar_container-right"></div>
+        </nav>
       </section>
     </div>
   );
