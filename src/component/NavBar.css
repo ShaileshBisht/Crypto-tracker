@@ -5,6 +5,9 @@ section {
 
 .navBar_container {
   padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navBar_container-left {
@@ -15,4 +18,10 @@ section {
 .navBar_container-left img {
   width: 50px;
   margin-right: 10px;
+}
+
+.navBar_container-right input {
+  border: none;
+  outline-style: none;
+  padding: 15px;
 }
