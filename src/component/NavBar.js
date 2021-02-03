@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./NavBar.css";
 import coinImg from "../assets/images/coinnav1.webp";
 
 function NavBar() {
+  useEffect(() => {
+    window.onscroll = () => {
+      if (window.pageYOffset > 50) {
+        document.getElementById("navBar").classList.add("navBar_active");
+      } else {
+        document.getElementById("navBar").classList.remove("navBar_active");
+      }
+    };
+  });
+
   return (
-    <div className="navBar">
+    <div className="navBar" id="navBar">
       <section>
         <nav className="navBar_container">
           <div className="navBar_container-left">
