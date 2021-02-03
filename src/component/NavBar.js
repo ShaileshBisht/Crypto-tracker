@@ -13,7 +13,9 @@ function NavBar() {
               crypto<span>Tracker</span>
             </h1>
           </div>
-          <div className="navBar_container-right"></div>
+          <div className="navBar_container-right">
+            <input type="text" placeholder="Search.." />
+          </div>
         </nav>
       </section>
     </div>
