@@ -1,11 +1,11 @@
 import React from "react";
-import "./HomeResult.css";
+import "./HomeDisplay.css";
 import CryptoCard from "./CryptoCard";
 
 function HomeResult() {
   return (
-    <div className="homeResult">
-      <h1>i am home result component</h1>
+    <div className="homeDisplay">
+      <h1>i am home display component</h1>
       <CryptoCard />
     </div>
   );
