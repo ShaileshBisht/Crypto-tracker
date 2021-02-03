@@ -1,3 +1,7 @@
+.navBar {
+  background-color: #222531;
+}
+
 section {
   margin: 0 auto;
   max-width: 1100px;
@@ -20,15 +24,26 @@ section {
   margin-right: 10px;
 }
 
+.navBar_container-left h1 {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.navBar_container-left h1 strong {
+  color: yellow;
+  font-size: 1.8rem;
+}
+
 .navBar_container-right input {
   border: none;
   outline-style: none;
   padding: 15px;
   border-radius: 10px;
-  background: #222531;
-  color: white;
+  background: #e2e2e2;
+  color: black;
 }
 
 .navBar_container-right input::placeholder {
-  color: #e2e2e2;
+  color: black;
 }

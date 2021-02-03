@@ -1,6 +1,6 @@
 import React from "react";
 import "./NavBar.css";
-import coinImg from "../assets/images/navIcon2.png";
+import coinImg from "../assets/images/coinnav1.webp";
 
 function NavBar() {
   return (
@@ -10,7 +10,7 @@ function NavBar() {
           <div className="navBar_container-left">
             <img src={coinImg} alt="" />
             <h1>
-              crypto<span>Tracker</span>
+              crypto<strong>Tracker</strong>
             </h1>
           </div>
           <div className="navBar_container-right">
