@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./HomeDisplay.css";
 import CryptoCard from "./CryptoCard";
-import { createFactory } from "react";
 
 function HomeResult() {
   const [homeData, setHomeData] = useState([]);
@@ -21,8 +20,17 @@ function HomeResult() {
 
   return (
     <div className="homeDisplay">
-      <h1>i am home display component</h1>
-      <CryptoCard />
+      {homeData.map((item) => (
+        <CryptoCard
+          key={item.id}
+          name={item.name}
+          image={item.image}
+          symbol={item.symbol}
+          current_price={item.current_price}
+          rank={item.market_cap_rank}
+          hourChangePercentage={item.price_change_percentage_1h_in_currency}
+        />
+      ))}
     </div>
   );
 }
