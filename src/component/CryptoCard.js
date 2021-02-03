@@ -10,6 +10,7 @@ function CryptoCard({
   rank,
   hourChangePercentage,
   ChangePercentage24,
+  updated,
 }) {
   return (
     <div className="cryptoCard">
@@ -41,17 +42,22 @@ function CryptoCard({
         </div>
 
         <div className="cryptoCard_24Hour">
-          <h3>% change 24h</h3>
+          <h3>Price change 24h</h3>
           <p className={ChangePercentage24 > 0 ? "green" : "red"}>
             {ChangePercentage24.toFixed(2)}%
           </p>
         </div>
 
         <div className="cryptoCard_1Hour">
-          <h3>% change 1h</h3>
+          <h3>Price change 1h</h3>
           <p className={hourChangePercentage > 0 ? "green" : "red"}>
             {hourChangePercentage.toFixed(2)}%
           </p>
+        </div>
+
+        <div className="cryptoCard_updated">
+          <h3>last updated</h3>
+          <p>{updated}</p>
         </div>
       </section>
     </div>

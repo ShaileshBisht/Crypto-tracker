@@ -30,6 +30,7 @@ function HomeResult() {
           rank={item.market_cap_rank}
           hourChangePercentage={item.price_change_percentage_1h_in_currency}
           ChangePercentage24={item.price_change_percentage_24h}
+          updated={item.last_updated}
         />
       ))}
     </div>
