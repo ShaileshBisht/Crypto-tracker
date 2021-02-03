@@ -9,6 +9,7 @@ function CryptoCard({
   current_price,
   rank,
   hourChangePercentage,
+  ChangePercentage24,
 }) {
   return (
     <div className="cryptoCard">
@@ -22,14 +23,14 @@ function CryptoCard({
       <section>
         <div className="cryptoCard_left">
           <div className="left_rank">
-            <h1>rank</h1>
+            <h3>rank</h3>
             <p>{rank}</p>
           </div>
           <img src={image} alt="" />
           <div className="left_name">
-            <h1>Name/Symbol</h1>
+            <h3>Name</h3>
             <p>
-              {name} / {symbol}
+              {name}({symbol})
             </p>
           </div>
         </div>

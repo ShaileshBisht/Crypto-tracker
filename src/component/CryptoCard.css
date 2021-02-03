@@ -1,0 +1,17 @@
+.cryptoCard_left {
+  display: flex;
+  align-items: center;
+}
+
+.left_rank {
+  text-align: left;
+}
+
+.cryptoCard_left img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.left_name {
+  text-align: left;
+}
