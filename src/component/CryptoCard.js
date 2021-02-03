@@ -39,6 +39,13 @@ function CryptoCard({
           <h3>current price</h3>
           <p>₹ {current_price.toLocaleString("en-IN")}</p>
         </div>
+
+        <div className="cryptoCard_24Hour">
+          <h3>% change 24h</h3>
+          <p className={ChangePercentage24 > 0 ? "green" : "red"}>
+            {ChangePercentage24.toFixed(2)}%
+          </p>
+        </div>
       </section>
     </div>
   );
