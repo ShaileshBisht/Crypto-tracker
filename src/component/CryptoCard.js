@@ -46,6 +46,13 @@ function CryptoCard({
             {ChangePercentage24.toFixed(2)}%
           </p>
         </div>
+
+        <div className="cryptoCard_1Hour">
+          <h3>% change 1h</h3>
+          <p className={hourChangePercentage > 0 ? "green" : "red"}>
+            {hourChangePercentage.toFixed(2)}%
+          </p>
+        </div>
       </section>
     </div>
   );
