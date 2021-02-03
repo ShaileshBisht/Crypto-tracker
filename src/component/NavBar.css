@@ -24,4 +24,11 @@ section {
   border: none;
   outline-style: none;
   padding: 15px;
+  border-radius: 10px;
+  background: #222531;
+  color: white;
+}
+
+.navBar_container-right input::placeholder {
+  color: #e2e2e2;
 }
