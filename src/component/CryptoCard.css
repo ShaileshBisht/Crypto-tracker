@@ -4,14 +4,20 @@
 }
 
 .cryptoCard_block {
+  color: white;
   border-radius: 10px;
-  background-color: #e2e2e2;
+  background-color: #222531;
   padding: 5px 10px;
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
   background-color: ;
   grid-gap: 3%;
   margin: 10px auto;
+  transition: transform 300ms ease-in-out;
+}
+
+.cryptoCard_block:hover {
+  transform: scale(1.04);
 }
 
 .cryptoCard_left {
@@ -36,10 +42,12 @@
 
 .green {
   color: green;
+  font-size: 1.3rem;
   font-weight: bolder;
 }
 
 .red {
   color: red;
+  font-size: 1.3rem;
   font-weight: bolder;
 }
