@@ -1,7 +1,17 @@
+.cryptoCard {
+  background-color: black;
+  padding: 1px 0;
+}
+
 .cryptoCard_block {
+  border-radius: 10px;
+  background-color: #e2e2e2;
+  padding: 5px 10px;
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
-  grid-gap: 30px;
+  background-color: ;
+  grid-gap: 3%;
+  margin: 10px auto;
 }
 
 .cryptoCard_left {
@@ -26,8 +36,10 @@
 
 .green {
   color: green;
+  font-weight: bolder;
 }
 
 .red {
   color: red;
+  font-weight: bolder;
 }
