@@ -7,7 +7,7 @@
 }
 
 .navBar_active {
-  background-color: black;
+  background-color: rgb(102, 28, 28);
   position: fixed;
   width: 100%;
   z-index: 10;

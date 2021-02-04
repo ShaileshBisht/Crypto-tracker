@@ -17,7 +17,7 @@ function NavBar() {
     <div className="navBar" id="navBar">
       <section>
         <nav className="navBar_container">
-          <div className="navBar_container-left">
+          <div className="navBar_container-left" id="navBar_container-left">
             <img src={coinImg} alt="" />
             <h1>
               crypto<strong>Tracker</strong>
