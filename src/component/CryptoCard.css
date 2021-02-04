@@ -1,6 +1,7 @@
 .cryptoCard {
   background-color: black;
   padding: 1px 0;
+  overflow: hidden;
 }
 
 .cryptoCard_block {
@@ -53,4 +54,41 @@
   color: red;
   font-size: 1.3rem;
   font-weight: bolder;
+}
+
+@media only screen and (max-width: 1050px) {
+  .cryptoCard {
+    background-color: white;
+    padding: 1px 0;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  .cryptoCard_left {
+    margin: auto;
+  }
+
+  .cryptoCard_block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cryptoCard_price {
+    margin: 5px 0;
+  }
+
+  .cryptoCard_24Hour {
+    margin: 5px 0;
+  }
+
+  .cryptoCard_1Hour {
+    margin: 5px 0;
+  }
+
+  .cryptoCard_updated {
+    margin: 5px 0;
+  }
 }

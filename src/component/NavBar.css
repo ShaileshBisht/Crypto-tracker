@@ -1,9 +1,9 @@
 .navBar {
   background-color: #222531;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
+  overflow: hidden;
 }
 
 .navBar_active {
@@ -11,6 +11,7 @@
   position: fixed;
   width: 100%;
   z-index: 10;
+  transition: 2s ease-in-out;
 }
 
 section {
