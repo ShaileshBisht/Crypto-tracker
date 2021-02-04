@@ -31,20 +31,20 @@ function CryptoCard({
 
         <div className="cryptoCard_price">
           <h3>current price</h3>
-          <p>₹ {current_price.toLocaleString("en-IN")}</p>
+          <p>₹ {current_price?.toLocaleString("en-IN")}</p>
         </div>
 
         <div className="cryptoCard_24Hour">
           <h3>Price change 24h</h3>
           <p className={ChangePercentage24 > 0 ? "green" : "red"}>
-            {ChangePercentage24.toFixed(2)}%
+            {ChangePercentage24?.toFixed(2)}%
           </p>
         </div>
 
         <div className="cryptoCard_1Hour">
           <h3>Price change 1h</h3>
           <p className={hourChangePercentage > 0 ? "green" : "red"}>
-            {hourChangePercentage.toFixed(2)}%
+            {hourChangePercentage?.toFixed(2)}%
           </p>
         </div>
 
