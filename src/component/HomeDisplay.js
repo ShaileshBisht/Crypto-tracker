@@ -4,7 +4,6 @@ import CryptoCard from "./CryptoCard";
 
 function HomeResult() {
   const [homeData, setHomeData] = useState([]);
-  console.log(homeData);
 
   useEffect(() => {
     const coinData = async () => {
