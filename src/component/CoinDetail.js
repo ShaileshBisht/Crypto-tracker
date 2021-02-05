@@ -54,7 +54,47 @@ function CoinDetail() {
         <h3>
           Current Price:{" "}
           <span>
-            ₹ {coinData?.market_data.current_price?.inr.toLocaleString("en-IN")}
+            ₹{" "}
+            {coinData?.market_data?.current_price?.inr.toLocaleString("en-IN")}
+          </span>
+        </h3>
+        <h3>
+          Total Volume:{" "}
+          <span>
+            ₹ {coinData?.market_data?.total_volume?.inr.toLocaleString("en-IN")}
+          </span>
+        </h3>
+        <h3>
+          Price Change in 1hrs:{" "}
+          <span>
+            {coinData?.market_data?.price_change_percentage_1h_in_currency?.inr.toFixed(
+              2
+            )}
+            %
+          </span>
+        </h3>
+        <h3>
+          Price Change in 24hrs:{" "}
+          <span>
+            {coinData?.market_data?.price_change_percentage_24h.toFixed(2)}%
+          </span>
+        </h3>
+        <h3>
+          Price Change in 7Day:{" "}
+          <span>
+            {coinData?.market_data?.price_change_percentage_7d_in_currency?.inr.toFixed(
+              2
+            )}
+            %
+          </span>
+        </h3>
+        <h3>
+          Price Change in 1Y:{" "}
+          <span>
+            {coinData?.market_data?.price_change_percentage_1y_in_currency?.inr.toFixed(
+              2
+            )}
+            %
           </span>
         </h3>
       </div>
