@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./component/NavBar";
 import HomeDisplay from "./component/HomeDisplay";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import CoinDetail from "./component/CoinDetail";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
             <HomeDisplay />
           </Route>
           <Route exact path="/coin/detail">
-            <h1>i am detail</h1>
+            <CoinDetail />
           </Route>
         </Switch>
       </Router>
