@@ -1,0 +1,10 @@
+.coinDetail_top {
+  display: flex;
+  align-items: center;
+}
+
+.coinDetail_top-left img {
+  object-fit: contain;
+  width: 70px;
+  margin-right: 10px;
+}
