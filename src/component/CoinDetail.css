@@ -42,3 +42,33 @@
   color: white;
   margin: 10px 0;
 }
+
+@media only screen and (max-width: 1317px) {
+  .coinDetail {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .coinDetail {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 745px) {
+  .coinDetail {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .coinDetail {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 451px) {
+  .coinDetail {
+    max-width: 100%;
+  }
+}
