@@ -30,9 +30,9 @@ function NavBar() {
               crypto<strong>Tracker</strong>
             </h1>
           </div>
-          <div className="navBar_container-right">
+          {/* <div className="navBar_container-right">
             <input type="text" placeholder="Search.." />
-          </div>
+          </div> */}
         </nav>
       </section>
     </div>
