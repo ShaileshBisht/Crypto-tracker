@@ -19,20 +19,26 @@ function HomeResult() {
 
   return (
     <div className="homeDisplay">
-      {homeData.map((item) => (
-        <CryptoCard
-          key={item.id}
-          coinid={item.id}
-          name={item.name}
-          image={item.image}
-          symbol={item.symbol}
-          current_price={item.current_price}
-          rank={item.market_cap_rank}
-          hourChangePercentage={item.price_change_percentage_1h_in_currency}
-          ChangePercentage24={item.price_change_percentage_24h}
-          updated={item.last_updated}
-        />
-      ))}
+      {homeData.length !== 0 ? (
+        <>
+          {homeData.map((item) => (
+            <CryptoCard
+              key={item.id}
+              coinid={item.id}
+              name={item.name}
+              image={item.image}
+              symbol={item.symbol}
+              current_price={item.current_price}
+              rank={item.market_cap_rank}
+              hourChangePercentage={item.price_change_percentage_1h_in_currency}
+              ChangePercentage24={item.price_change_percentage_24h}
+              updated={item.last_updated}
+            />
+          ))}
+        </>
+      ) : (
+        <h1>loading</h1>
+      )}
     </div>
   );
 }
