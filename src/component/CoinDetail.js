@@ -4,6 +4,7 @@ import { selectCoin } from "../features/coinSlice";
 import "./CoinDetail.css";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { makeStyles } from "@material-ui/core/styles";
+import gsap from "gsap";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,6 +23,15 @@ function CoinDetail() {
   const [coinData, setCoinData] = useState([]);
 
   console.log(coinData);
+
+  useEffect(() => {
+    gsap.from(".coinDetail", {
+      duration: 2,
+      opacity: 0,
+      rotateY: "360deg",
+      ease: "back.out(1.7)",
+    });
+  });
 
   useEffect(() => {
     const coinData = async () => {
