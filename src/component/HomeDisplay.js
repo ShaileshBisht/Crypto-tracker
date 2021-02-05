@@ -1,8 +1,21 @@
 import React, { useState, useEffect } from "react";
 import "./HomeDisplay.css";
 import CryptoCard from "./CryptoCard";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    marginTop: "30px",
+    display: "flex",
+    "& > * + *": {
+      marginLeft: theme.spacing(2),
+    },
+  },
+}));
 
 function HomeResult() {
+  const classes = useStyles();
   const [homeData, setHomeData] = useState([]);
 
   useEffect(() => {
@@ -37,7 +50,10 @@ function HomeResult() {
           ))}
         </>
       ) : (
-        <h1>loading</h1>
+        <div className={classes.root}>
+          <CircularProgress />
+          <CircularProgress color="secondary" />
+        </div>
       )}
     </div>
   );
