@@ -29,6 +29,7 @@ section {
 .navBar_container-left {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navBar_container-left img {

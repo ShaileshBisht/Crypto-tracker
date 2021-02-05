@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import "./NavBar.css";
 import coinImg from "../assets/images/coinnav1.webp";
+import { useHistory } from "react-router-dom";
 
 function NavBar() {
+  const history = useHistory();
+
   useEffect(() => {
     window.onscroll = () => {
       if (window.pageYOffset > 50) {
@@ -17,7 +20,11 @@ function NavBar() {
     <div className="navBar" id="navBar">
       <section>
         <nav className="navBar_container">
-          <div className="navBar_container-left" id="navBar_container-left">
+          <div
+            onClick={() => history.push("/")}
+            className="navBar_container-left"
+            id="navBar_container-left"
+          >
             <img src={coinImg} alt="" />
             <h1>
               crypto<strong>Tracker</strong>
