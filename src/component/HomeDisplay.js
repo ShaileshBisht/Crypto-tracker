@@ -23,6 +23,7 @@ function HomeResult() {
       {homeData.map((item) => (
         <CryptoCard
           key={item.id}
+          coinid={item.id}
           name={item.name}
           image={item.image}
           symbol={item.symbol}

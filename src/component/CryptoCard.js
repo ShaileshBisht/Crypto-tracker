@@ -1,8 +1,10 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { tracker } from "../features/coinSlice";
 import "./CryptoCard.css";
 
 function CryptoCard({
-  key,
+  coinid,
   name,
   image,
   symbol,
@@ -12,8 +14,14 @@ function CryptoCard({
   ChangePercentage24,
   updated,
 }) {
+  const disptach = useDispatch();
+
+  const trackerFunction = () => {
+    disptach(tracker({ uid: coinid }));
+  };
+
   return (
-    <div className="cryptoCard">
+    <div onClick={trackerFunction} className="cryptoCard">
       <section className="cryptoCard_block">
         <div className="cryptoCard_left">
           <div className="left_rank">
