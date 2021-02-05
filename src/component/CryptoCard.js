@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
 import { tracker } from "../features/coinSlice";
 import "./CryptoCard.css";
 
@@ -14,10 +15,13 @@ function CryptoCard({
   ChangePercentage24,
   updated,
 }) {
+  const history = useHistory();
+
   const disptach = useDispatch();
 
   const trackerFunction = () => {
     disptach(tracker({ uid: coinid }));
+    history.push("./coin/detail");
   };
 
   return (
