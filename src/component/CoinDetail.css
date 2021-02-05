@@ -1,10 +1,39 @@
+.coinDetail {
+  max-width: 30%;
+  margin: 40px auto;
+  background: black;
+  padding: 2%;
+  border-radius: 10px;
+  color: white;
+}
+
 .coinDetail_top {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .coinDetail_top-left img {
   object-fit: contain;
   width: 70px;
   margin-right: 10px;
+}
+
+.coinDetail_middle {
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+.coinDetail_middle h3 {
+  color: yellow;
+  margin: 10px 0;
+}
+
+.coinDetail_middle h3:hover {
+  text-decoration: underline;
+}
+
+.coinDetail_middle span {
+  color: white;
+  margin: 10px 0;
 }
