@@ -5,6 +5,7 @@
   padding: 2%;
   border-radius: 10px;
   color: white;
+  overflow: hidden;
 }
 
 .coinDetail_top {
@@ -17,6 +18,10 @@
   object-fit: contain;
   width: 70px;
   margin-right: 10px;
+}
+
+.coinDetail_top-right span {
+  color: yellow;
 }
 
 .coinDetail_middle {
