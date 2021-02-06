@@ -3,7 +3,6 @@ import "./HomeDisplay.css";
 import CryptoCard from "./CryptoCard";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { makeStyles } from "@material-ui/core/styles";
-import gsap from "gsap";
 
 const useStyles = makeStyles((theme) => ({
   root: {

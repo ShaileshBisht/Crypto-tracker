@@ -22,8 +22,6 @@ function CoinDetail() {
 
   const [coinData, setCoinData] = useState([]);
 
-  console.log(coinData);
-
   useEffect(() => {
     gsap.from(".coinDetail", {
       duration: 2,
