@@ -15,6 +15,7 @@
   grid-gap: 3%;
   margin: 10px auto;
   transition: all 300ms ease-in-out;
+  cursor: pointer;
 }
 
 .cryptoCard_block:hover {
