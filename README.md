@@ -1,5 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+https://crypto-current.netlify.app/
 
+Features:
+-This app fetch Live data using RESTful API , Hence no value is Hard coded.
+-Redux is used to Store crypto unique ID and fetch new data in new page.
+- React-Router-Dom is Used for single-page web application with navigation without the page refreshing.
+- Spinner animation for Loading, Hover effect and coin spinner logo and Navbar change color on scroll.
+-HTML and CSS( flex-box and Grid ) to make it fully responsive without any external frame work.
 ## Available Scripts
 
 In the project directory, you can run:
